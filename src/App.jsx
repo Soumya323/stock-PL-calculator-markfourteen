@@ -2,6 +2,9 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
+import githubImage from "./images/github.png";
+import instagramImage from "./images/instagram.png";
+import twitterImage from "./images/twitter.png";
 
 function App() {
   let initialPrice = 0;
@@ -20,8 +23,6 @@ function App() {
         currentPrice = parseFloat(value);
         break;
     }
-
-    console.log(`The value is ${value} and the input index is ${index}`);
   }
 
   function onCalcualteClicked() {
@@ -50,13 +51,14 @@ function App() {
 
   return (
     <>
-      <div>
+      <div id="app-root">
         <h1>Stock Profit and Loss Calculator</h1>
 
         <h3>Initial Price</h3>
         <input
           type="number"
           placeholder="Enter initial price here"
+          className="input-field"
           onChange={(e) => {
             onInputChanged(e.target.value, 0);
           }}
@@ -66,6 +68,7 @@ function App() {
         <input
           type="number"
           placeholder="Enter number of stocks bought"
+          className="input-field"
           onChange={(e) => {
             onInputChanged(e.target.value, 1);
           }}
@@ -75,6 +78,7 @@ function App() {
         <input
           type="number"
           placeholder="Enter the current price of stock"
+          className="input-field"
           onChange={(e) => {
             onInputChanged(e.target.value, 2);
           }}
@@ -84,6 +88,28 @@ function App() {
         <button onClick={onCalcualteClicked}>Tell me!</button>
 
         <p id="result"></p>
+
+        <footer>
+          <p>soumya ripan: </p>
+
+          <ul>
+            <li>
+              <a href="https://github.com/Soumya323">
+                <img src={githubImage} alt="github" />
+              </a>
+            </li>
+            <li>
+              <a href="/">
+                <img src={twitterImage} alt="twitter"></img>
+              </a>
+            </li>
+            <li>
+              <a href="/">
+                <img src={instagramImage} alt="instagram"></img>
+              </a>
+            </li>
+          </ul>
+        </footer>
       </div>
     </>
   );

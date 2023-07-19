@@ -1,6 +1,72 @@
-#root {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+#app-root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --accent-color: #7c3aed;
+}
+
+h3 {
+  margin-top: 30px;
+}
+
+.input-field {
+  width: 30%;
+  height: 2.25rem;
+  border-radius: 0.5rem;
+  border-style: none;
+  border: 2px solid var(--accent-color);
+  font-size: 1.25rem;
+}
+
+button {
+  margin-top: 30px;
+  width: 150px;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  border-radius: 0.75rem;
+  border-style: none;
+  border: 2px solid var(--accent-color);
+  background-color: var(--accent-color);
+  color: white;
+}
+
+#result {
+  margin-top: 40px;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+footer p {
+  height: 2rem;
+}
+
+footer ul {
+  margin-top: 10px;
+  display: flex;
+  align-items: flex-start;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer img {
+  max-width: 2rem;
+  max-height: 2rem;
 }
