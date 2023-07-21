@@ -99,7 +99,7 @@ function App() {
               </a>
             </li>
             <li>
-              <a href="/">
+              <a href="https://twitter.com/Ripann_?t=8IMb-TON6SKeOCqh7DyWzg&s=09">
                 <img src={twitterImage} alt="twitter"></img>
               </a>
             </li>
